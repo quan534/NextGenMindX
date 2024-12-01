@@ -1,0 +1,50 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+/* Main content styles */
+main {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #4CAF50;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Link hover effect */
+a:hover {
+    text-decoration: underline;
+}
