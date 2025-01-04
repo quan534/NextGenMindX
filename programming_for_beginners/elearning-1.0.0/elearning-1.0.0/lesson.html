@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <title>eLEARNING - Mẫu HTML eLearning</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="css/lesson.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Bắt đầu lesson -->
+    <div class="navbar">
+        <button class="back-button" onclick="goBack()">&#60;</button>
+        <h2>Khóa Học Unreal Engine 5: Nhập Môn C++</h2>
+    </div>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- <h2>Khóa Học Unreal Engine 5: Nhập Môn C++</h2> -->
+            <ul class="course-sections">
+                <li>
+                    <h3 onclick="toggleSection(1)">1. Giới Thiệu (Học Thử) <span>2</span></h3>
+                    <ul id="section-1" class="hidden">
+                        <li><span class="icon">👁</span> Giới thiệu khóa học</li>
+                        <li><span class="icon">👁</span> Cách đặt câu hỏi</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 onclick="toggleSection(2)">2. Lập Trình C (Học Thử) <span>4</span></h3>
+                    <ul id="section-2" class="hidden">
+                        <li><span class="icon">👁</span> Nhị Phân</li>
+                        <li><span class="icon">👁</span> BIT</li>
+                        <li><span class="icon">👁</span> Cài đặt Visual Studio</li>
+                        <li><span class="icon">👁</span> Target Audience</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 onclick="toggleSection(3)">Bài Giảng Full (Sau Khi Thanh Toán) <span>1</span></h3>
+                    <ul id="section-3" class="hidden">
+                        <li><span class="icon">🔒</span> Link truy cập khóa học</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Player" frameborder="0" allowfullscreen
+                class="video-player">
+            </iframe>
+            <h1>1. Nhị Phân</h1>
+            <div class="pagination">
+                <button class="prev">← Previous</button>
+                <button class="next">Next →</button>
+            </div>
+        </div>
+    </div>
+    <!-- Kết thúc lesson -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/lesson.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+:root {
+    --main-color: #06BBCC;
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+  }
+  
+  .intro {
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  div.intro{
+    background: linear-gradient(120deg, #b2f9ff4f, #4fd5e750, #b2f9ff56);
+  }
+  .container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .course-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  .course-info {
+    flex: 1;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .tab.active {
+    background-color: var(--main-color);
+    color: #fff;
+  }
+  
+  .tab-content .tab-pane {
+    display: none;
+  }
+  
+  .tab-content .tab-pane.active {
+    display: block;
+  }
+  
+  .accordion {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .accordion-header {
+    width: 100%;
+    background: #06bbcc62;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+    border: 0;
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 10px;
+    background: #fff;
+  }
+  
+  .accordion-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .accordion-content li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .accordion-content .icon {
+    color: var(--main-color);
+  }
+  
