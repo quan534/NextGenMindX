@@ -19,38 +19,62 @@
 // const database = firebase.database()
 
 // Form elements
-var addForm
-var product_name
-var product_categorie
-var product_description
-var product_length
-var product_number_of_students
-var product_price
-var product_teacher
-var product_rate
-var percentage_discount
-var product_detailed_description
-var product_detailed_teacher
-var product_detailed_rate
-var product_lessons
-var imageUpload
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("The HTML has finished loading!");
-    addForm = document.getElementById('add_form')
-    product_name = document.getElementById('product_name')
-    product_categorie = document.getElementById('product_categorie')
-    product_description = document.getElementById('product_description')
-    product_length = document.getElementById('product_length')
-    product_number_of_students = document.getElementById('product_number_of_students')
-    product_price = document.getElementById('product_price')
-    product_teacher = document.getElementById('product_teacher')
-    product_rate = document.getElementById('product_rate')
-    percentage_discount = document.getElementById('percentage_discount')
-    product_detailed_description = document.getElementById('product_detailed_description')
-    product_detailed_teacher = document.getElementById('product_detailed_teacher')
-    product_detailed_rate = document.getElementById('product_detailed_rate')
-    product_lessons = document.getElementById('product_lessons')
-    imageUpload = document.getElementById('filebutton')
+    const addForm = document.getElementById('add_form')
+    const product_name = document.getElementById('product_name')
+    const product_categorie = document.getElementById('product_categorie')
+    const product_description = document.getElementById('product_description')
+    const product_length = document.getElementById('product_length')
+    const product_number_of_students = document.getElementById('product_number_of_students')
+    const product_price = document.getElementById('product_price')
+    const product_teacher = document.getElementById('product_teacher')
+    const product_rate = document.getElementById('product_rate')
+    const percentage_discount = document.getElementById('percentage_discount')
+    const product_detailed_description = document.getElementById('product_detailed_description')
+    const product_detailed_teacher = document.getElementById('product_detailed_teacher')
+    const product_detailed_rate = document.getElementById('product_detailed_rate')
+    const product_lessons = document.getElementById('product_lessons')
+    const imageUpload = document.getElementById('filebutton')
+
+    addForm.addEventListener('submit', (e) => {
+        e.preventDefault()
+
+        const addForm_value = addForm.value
+        const product_name_value = product_name.value
+        const product_categorie_value = product_categorie.value
+        const product_description_value = product_description.value
+        const product_length_value = product_length.value
+        const product_number_of_students_value = product_number_of_students.value
+        const product_price_value = product_price.value
+        const product_teacher_value = product_teacher.value
+        const product_rate_value = product_rate.value
+        const percentage_discount_value = percentage_discount.value
+        const product_detailed_description_value = product_detailed_description.value
+        const product_detailed_teacher_value = product_detailed_teacher.value
+        const product_detailed_rate_value = product_detailed_rate.value
+        const product_lessons_value = product_lessons.value
+        const imageUpload_value = imageUpload
+        
+        if (image) {
+            const reader = new FileReader()
+            reader.onloadend = () => {
+                const imageData = reader.result
+                // const newApartmentRef = database.ref('apartments').push()
+                // newApartmentRef.set({
+                //     name: name,
+                //     price: price,
+                //     description: description,
+                //     image: imageData
+                // }).then(() => {
+                //     alert("Thêm sản phẩm thành công vào website")
+                //     resetAddForm()
+                //     displayApartment()
+                // })
+            }
+            reader.readAsDataURL(image)
+        }
+        alert("done")
+    })
 });
 // const updateForm = document.getElementById('updateForm')
 // const updateName = document.getElementById('updateName')
@@ -60,45 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // const apartmentList = document.getElementById('apartmentList')
 
 //Them san pham vào firebase (add data to firebase)
-addForm.addEventListener('submit', (e) => {
-    e.preventDefault()
-    alert("submit")
 
-    // const addForm_value = addForm.value
-    // const product_name_value = product_name.value
-    // const product_categorie_value = product_categorie.value
-    // const product_description_value = product_description.value
-    // const product_length_value = product_length.value
-    // const product_number_of_students_value = product_number_of_students.value
-    // const product_price_value = product_price.value
-    // const product_teacher_value = product_teacher.value
-    // const product_rate_value = product_rate.value
-    // const percentage_discount_value = percentage_discount.value
-    // const product_detailed_description_value = product_detailed_description.value
-    // const product_detailed_teacher_value = product_detailed_teacher.value
-    // const product_detailed_rate_value = product_detailed_rate.value
-    // const product_lessons_value = product_lessons.value
-    // const imageUpload_value = imageUpload
-
-    // if (image) {
-    //     const reader = new FileReader()
-    //     reader.onloadend = () => {
-    //         const imageData = reader.result
-    //         // const newApartmentRef = database.ref('apartments').push()
-    //         // newApartmentRef.set({
-    //         //     name: name,
-    //         //     price: price,
-    //         //     description: description,
-    //         //     image: imageData
-    //         // }).then(() => {
-    //         //     alert("Thêm sản phẩm thành công vào website")
-    //         //     resetAddForm()
-    //         //     displayApartment()
-    //         // })
-    //     }
-    //     reader.readAsDataURL(image)
-    // }
-})
 
 // Reset khung thông tin thêm sản phẩm
 // function resetAddForm() {
